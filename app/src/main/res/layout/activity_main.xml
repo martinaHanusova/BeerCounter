@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.beercounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/khand"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:text="Beer Counter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_font" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="horizontal"
+            android:paddingTop="40dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:imeActionLabel="Done"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:hint="Name"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/small_font" />
+                <TextView
+                    android:id="@+id/person_1_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.0 l"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/regular_font" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/small_first"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/small_icon_beer" />
+
+                    <ImageButton
+                        android:id="@+id/regular_first"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/icon_beer" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/name_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:imeActionLabel="Done"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:hint="Name"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/small_font" />
+
+                <TextView
+                    android:id="@+id/person_2_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.0 l"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/regular_font" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/small_second"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/small_icon_beer" />
+
+                    <ImageButton
+                        android:id="@+id/regular_second"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/icon_beer" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:imeActionLabel="Done"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:hint="Name"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/small_font" />
+
+                <TextView
+                    android:id="@+id/person_3_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.0 l"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/regular_font" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/small_third"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/small_icon_beer" />
+
+                    <ImageButton
+                        android:id="@+id/regular_third"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/icon_beer" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/name_forth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:imeActionLabel="Done"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:hint="Name"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/small_font" />
+
+                <TextView
+                    android:id="@+id/person_4_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.0 l"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/regular_font" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/small_fourth"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/small_icon_beer" />
+
+                    <ImageButton
+                        android:id="@+id/regular_fourth"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:background="@drawable/mybutton"
+                        android:src="@drawable/icon_beer" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/my_circle"
+            android:scaleType="centerInside"
+            android:src="@drawable/rsz_1rsz_1rsz_beer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mybutton"
+            android:onClick="undo"
+            android:text="undo"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton"
+            android:onClick="reset"
+            android:text="reset"
+            android:textSize="18dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton"
+            android:onClick="sendOnEmail"
+            android:text="send"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>
