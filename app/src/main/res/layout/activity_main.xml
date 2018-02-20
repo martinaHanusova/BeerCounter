@@ -71,7 +71,7 @@
                     android:imeActionLabel="Done"
                     android:singleLine="true"
                     android:inputType="textCapWords"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/small_font" />
                 <TextView
