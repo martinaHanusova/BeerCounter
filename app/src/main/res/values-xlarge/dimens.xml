@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_font">70sp</dimen>
+    <dimen name="regular_font">38sp</dimen>
+    <dimen name="small_font">28sp</dimen>
+    <dimen name="button_size">80dp</dimen>
+    <dimen name="small_horizontal_margin">10dp</dimen>
+    <dimen name="button_padding_small_icon">28dp</dimen>
+    <dimen name="button_padding_normal_icon">12dp</dimen>
+    <dimen name="button_padding_text">15dp</dimen>
+    <dimen name="button_text">36dp</dimen>
+    <dimen name="button_site_margin">40dp</dimen>
+    <dimen name="button_bottom_margin">10dp</dimen>
+    <dimen name="icon_beer">50dp</dimen>
+    <dimen name="icon_beer_2">40dp</dimen>
+    <dimen name="icon_beer_3">30dp</dimen>
+    <dimen name="icon_beer_4">20dp</dimen>
+    <dimen name="button_icons_padding">10dp</dimen>
+</resources>

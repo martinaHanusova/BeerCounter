@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Beer Counter</string>
+    <string name="name">Name</string>
+    <string name="undo">Undo</string>
+    <string name="reset">Reset</string>
+    <string name="send">Send</string>
+    <string name="mail_text">We drank so much</string>
 </resources>

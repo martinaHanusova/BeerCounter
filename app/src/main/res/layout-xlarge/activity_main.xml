@@ -275,6 +275,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/mybutton"
+            android:padding="@dimen/button_padding_text"
             android:onClick="undo"
             android:text="@string/undo"
             android:textSize="@dimen/button_text" />
@@ -284,6 +285,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/button_site_margin"
             android:background="@drawable/mybutton"
+            android:padding="@dimen/button_padding_text"
             android:onClick="reset"
             android:text="@string/reset"
             android:textSize="@dimen/button_text" />
@@ -292,6 +294,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/button_site_margin"
             android:background="@drawable/mybutton"
+            android:padding="@dimen/button_padding_text"
             android:onClick="sendOnEmail"
             android:text="@string/send"
             android:textSize="@dimen/button_text" />

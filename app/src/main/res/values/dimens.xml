@@ -5,4 +5,14 @@
     <dimen name="small_font">24sp</dimen>
     <dimen name="button_size">50dp</dimen>
     <dimen name="small_horizontal_margin">5dp</dimen>
+    <dimen name="button_padding_small_icon">14dp</dimen>
+    <dimen name="button_padding_normal_icon">6dp</dimen>
+    <dimen name="button_text">18dp</dimen>
+    <dimen name="button_site_margin">20dp</dimen>
+    <dimen name="button_bottom_margin">5dp</dimen>
+    <dimen name="icon_beer">25dp</dimen>
+    <dimen name="icon_beer_2">20dp</dimen>
+    <dimen name="icon_beer_3">15dp</dimen>
+    <dimen name="icon_beer_4">10dp</dimen>
+    <dimen name="button_icons_padding">5dp</dimen>
 </resources>

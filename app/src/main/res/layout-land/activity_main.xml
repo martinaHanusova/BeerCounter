@@ -15,21 +15,20 @@
         <TextView
             android:id="@+id/app_name"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:fontFamily="@font/khand"
             android:gravity="center_horizontal"
-            android:paddingTop="5dp"
-            android:text="Beer Counter"
+            android:text="@string/app_name"
             android:textColor="@android:color/white"
             android:textSize="@dimen/large_font" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorBackground"
-            android:orientation="horizontal"
-            android:paddingTop="10dp">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -45,7 +44,7 @@
                     android:imeActionLabel="Done"
                     android:singleLine="true"
                     android:inputType="textCapWords"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/small_font" />
 
@@ -54,7 +53,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.0 l"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/regular_font" />
 
@@ -69,16 +67,20 @@
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/small_icon_beer" />
+                        android:src="@drawable/beer_icon" />
 
                     <ImageButton
                         android:id="@+id/regular_first"
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/icon_beer" />
+                        android:src="@drawable/beer_icon" />
                 </LinearLayout>
 
 
@@ -96,7 +98,7 @@
                     android:imeActionLabel="Done"
                     android:singleLine="true"
                     android:inputType="textCapWords"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/small_font" />
 
@@ -105,7 +107,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.0 l"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/regular_font" />
 
@@ -120,16 +121,20 @@
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/small_icon_beer" />
+                        android:src="@drawable/beer_icon" />
 
                     <ImageButton
                         android:id="@+id/regular_second"
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/icon_beer" />
+                        android:src="@drawable/beer_icon" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -147,7 +152,7 @@
                     android:imeActionLabel="Done"
                     android:singleLine="true"
                     android:inputType="textCapWords"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/small_font" />
 
@@ -156,7 +161,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.0 l"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/regular_font" />
 
@@ -171,16 +175,20 @@
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/small_icon_beer" />
+                        android:src="@drawable/beer_icon" />
 
                     <ImageButton
                         android:id="@+id/regular_third"
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/icon_beer" />
+                        android:src="@drawable/beer_icon" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -196,7 +204,7 @@
                     android:imeActionLabel="Done"
                     android:singleLine="true"
                     android:inputType="textCapWords"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/small_font" />
 
@@ -205,7 +213,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.0 l"
                     android:textColor="@color/colorText"
                     android:textSize="@dimen/regular_font" />
 
@@ -220,41 +227,32 @@
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginRight="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/small_icon_beer" />
+                        android:src="@drawable/beer_icon" />
 
                     <ImageButton
                         android:id="@+id/regular_fourth"
                         android:layout_width="@dimen/button_size"
                         android:layout_height="@dimen/button_size"
                         android:layout_marginLeft="@dimen/small_horizontal_margin"
+                        android:scaleType="centerInside"
+                        android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/icon_beer" />
+                        android:src="@drawable/beer_icon" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
-            android:background="@drawable/my_circle"
-            android:scaleType="centerInside"
-            android:src="@drawable/rsz_1rsz_1rsz_beer" />
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_bottom_margin">
 
         <Button
             android:id="@+id/btn_undo"
@@ -262,21 +260,27 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/mybutton"
             android:onClick="undo"
-            android:text="undo"
-            android:textSize="18dp" />
+            android:text="@string/undo"
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/button_site_margin"
             android:background="@drawable/mybutton"
             android:onClick="reset"
-            android:text="reset"
-            android:textSize="18dp" />
+            android:text="@string/reset"
+            android:textSize="@dimen/button_text" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_site_margin"
+            android:background="@drawable/mybutton"
+            android:onClick="sendOnEmail"
+            android:text="@string/send"
+            android:textSize="@dimen/button_text" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beer Counter</string>
+    <string name="name">Jméno</string>
+    <string name="undo">Zpět</string>
+    <string name="reset">Reset</string>
+    <string name="send">Poslat</string>
+    <string name="mail_text">Tolik jsme toho vypili: </string>
+</resources>

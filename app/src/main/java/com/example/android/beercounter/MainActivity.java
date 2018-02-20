@@ -13,6 +13,7 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
+
     double volumeOne = 0.0;
     double volumeTwo = 0.0;
     double volumeThree = 0.0;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnUndo;
     Stack st = new Stack();
     DecimalFormat twoDecimal = new DecimalFormat("0.0");
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
         volumeForSecond = findViewById(R.id.person_2_volume);
         volumeForThird = findViewById(R.id.person_3_volume);
         volumeForFourth = findViewById(R.id.person_4_volume);
+        volumeForFirst.setText("0,0 l");
+        volumeForSecond.setText("0,0 l");
+        volumeForThird.setText("0,0 l");
+        volumeForFourth.setText("0,0 l");
         nameForFirst = findViewById(R.id.name_first);
         nameForSecond = findViewById(R.id.name_second);
         nameForThird = findViewById(R.id.name_third);
@@ -56,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnUndo.setEnabled(true);
+
                 st.push(new double[]{volumeOne, volumeTwo, volumeThree, volumeFour});
                 switch (view.getId()) {
                     case R.id.small_first:
@@ -104,6 +112,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Method for saving values
+     * @param outState
+     */
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -116,6 +129,11 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("nameThird", nameForThird.getText().toString());
         outState.putString("nameForth", nameForForth.getText().toString());
     }
+
+    /**
+     * Method for restore values
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -131,10 +149,20 @@ public class MainActivity extends AppCompatActivity {
         displayAll();
     }
 
-    public void display(double total, TextView volume) {
+    /**
+     *
+     * @param total is quantity of litres
+     * @param volume is Textview where we set the total
+     */
 
+    public void display(double total, TextView volume) {
         volume.setText(twoDecimal.format(total) + " l");
     }
+
+    /**
+     * Method for reseting score
+     * @param view
+     */
 
     public void reset(View view) {
         volumeOne = 0.0;
@@ -145,12 +173,21 @@ public class MainActivity extends AppCompatActivity {
         btnUndo.setEnabled(true);
     }
 
+    /**
+     * Method for display all four volumes
+     */
+
     private void displayAll() {
         display(volumeOne, volumeForFirst);
         display(volumeTwo, volumeForSecond);
         display(volumeThree, volumeForThird);
         display(volumeFour, volumeForFourth);
     }
+
+    /**
+     * Method for go back one step
+     * @param view
+     */
 
     public void undo(View view) {
         if (!st.empty()) {
@@ -163,19 +200,34 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Method for create message
+     * @return String with message
+     */
+
     private String createMessage() {
         return nameForFirst.getText().toString() + ": " + volumeOne + " l\n" + nameForSecond.getText().toString()+ ": " + volumeTwo + " l\n"
                 + nameForThird.getText().toString()+ ": " + volumeThree + " l\n" + nameForForth.getText().toString()+ ": " + volumeFour + " l\n";
     }
 
+    /**
+     * Method for open an email app and create message
+     * @param view
+     */
+
     public void sendOnEmail(View view) {
-        composeEmail(new String[] {"martina.hanus86@gmail.com"}, "Tolik jsme toho vypili", createMessage());
+    composeEmail(getString(R.string.mail_text), createMessage());
     }
 
-    public void composeEmail(String[] addresses, String subject, String message) {
+    /**
+     * Method for compose an Email
+     * @param subject subject of email
+     * @param message message of email
+     */
+
+    public void composeEmail(String subject, String message) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("*/*");
-        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, message);
         if (intent.resolveActivity(getPackageManager()) != null) {
