@@ -14,23 +14,23 @@ import java.util.Stack;
 public class MainActivity extends AppCompatActivity {
 
 
-    double volumeOne = 0.0;
-    double volumeTwo = 0.0;
-    double volumeThree = 0.0;
-    double volumeFour = 0.0;
-    TextView volumeForFirst;
-    TextView volumeForSecond;
-    TextView volumeForThird;
-    TextView volumeForFourth;
-    EditText nameForFirst;
-    EditText nameForSecond;
-    EditText nameForThird;
-    EditText nameForForth;
-    double SMALL_BEER = 0.3;
-    double REGULAR_BEER = 0.5;
-    Button btnUndo;
-    Stack st = new Stack();
-    DecimalFormat twoDecimal = new DecimalFormat("0.0");
+    private double volumeOne = 0.0;
+    private double volumeTwo = 0.0;
+    private double volumeThree = 0.0;
+    private double volumeFour = 0.0;
+    private TextView volumeForFirst;
+    private TextView volumeForSecond;
+    private TextView volumeForThird;
+    private TextView volumeForFourth;
+    private EditText nameForFirst;
+    private EditText nameForSecond;
+    private EditText nameForThird;
+    private EditText nameForForth;
+    private double SMALL_BEER = 0.3;
+    private double REGULAR_BEER = 0.5;
+    private Button btnUndo;
+    private Stack st = new Stack();
+    private DecimalFormat twoDecimal = new DecimalFormat("0.0");
 
 
     @Override
