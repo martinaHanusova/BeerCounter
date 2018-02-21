@@ -70,7 +70,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_first"/>
 
                     <ImageButton
                         android:id="@+id/regular_first"
@@ -80,7 +81,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_first"/>
                 </LinearLayout>
 
 
@@ -124,7 +126,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_second"/>
 
                     <ImageButton
                         android:id="@+id/regular_second"
@@ -134,7 +137,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_second"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -178,7 +182,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_third"/>
 
                     <ImageButton
                         android:id="@+id/regular_third"
@@ -188,7 +193,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_third"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -230,7 +236,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_fourth"/>
 
                     <ImageButton
                         android:id="@+id/regular_fourth"
@@ -240,7 +247,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_fourth"/>
                 </LinearLayout>
             </LinearLayout>
 

@@ -95,6 +95,7 @@
                         android:layout_marginRight="@dimen/small_horizontal_margin"
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
+                        android:contentDescription="@string/small_beer_first"
                         android:background="@drawable/mybutton"
                         android:src="@drawable/beer_icon" />
 
@@ -106,7 +107,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_first"/>
                 </LinearLayout>
 
                 <EditText
@@ -143,7 +145,8 @@
                         android:background="@drawable/mybutton"
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_second"/>
 
                     <ImageButton
                         android:id="@+id/regular_second"
@@ -153,7 +156,8 @@
                         android:background="@drawable/mybutton"
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_second"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -197,7 +201,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_third"/>
 
                     <ImageButton
                         android:id="@+id/regular_third"
@@ -207,7 +212,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_third"/>
                 </LinearLayout>
 
                 <EditText
@@ -244,7 +250,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_small_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/small_beer_fourth"/>
 
                     <ImageButton
                         android:id="@+id/regular_fourth"
@@ -254,7 +261,8 @@
                         android:scaleType="centerInside"
                         android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
-                        android:src="@drawable/beer_icon" />
+                        android:src="@drawable/beer_icon"
+                        android:contentDescription="@string/normal_beer_fourth"/>
                 </LinearLayout>
             </LinearLayout>
 

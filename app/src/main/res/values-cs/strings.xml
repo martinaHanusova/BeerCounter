@@ -5,5 +5,13 @@
     <string name="undo">Zpět</string>
     <string name="reset">Reset</string>
     <string name="send">Poslat</string>
-    <string name="mail_text">Tolik jsme toho vypili: </string>
+    <string name="mail_text">"Tolik jsme toho vypily: "</string>
+    <string name="small_beer_first">Přidat malé pivo první osobě</string>
+    <string name="small_beer_second">Přidat malé pivo druhé osobě</string>
+    <string name="small_beer_third">Přidat malé pivo třetí osobě</string>
+    <string name="small_beer_fourth">Přidat malé pivo čtvrté osobě</string>
+    <string name="normal_beer_first">Přidat velké pivo první osobě</string>
+    <string name="normal_beer_second">Přidat velké pivo druhé osobě</string>
+    <string name="normal_beer_third">Přidat velké pivo třetí osobě</string>
+    <string name="normal_beer_fourth">Přidat velké pivo čtvrté osobě</string>
 </resources>

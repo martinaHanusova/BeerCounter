@@ -4,5 +4,13 @@
     <string name="undo">Undo</string>
     <string name="reset">Reset</string>
     <string name="send">Send</string>
-    <string name="mail_text">We drank so much</string>
+    <string name="mail_text">"We drank so much: "</string>
+    <string name="small_beer_first">Add small beer to first person</string>
+    <string name="small_beer_second">Add small beer to second person</string>
+    <string name="small_beer_third">Add small beer to third person</string>
+    <string name="small_beer_fourth">Add small beer to fourth person</string>
+    <string name="normal_beer_first">Add regular beer to first person</string>
+    <string name="normal_beer_second">Add regular beer to second person</string>
+    <string name="normal_beer_third">Add regular beer to third person</string>
+    <string name="normal_beer_fourth">Add regular beer to fourth person</string>
 </resources>

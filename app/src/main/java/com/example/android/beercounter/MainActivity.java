@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText nameForFirst;
     private EditText nameForSecond;
     private EditText nameForThird;
-    private EditText nameForForth;
+    private EditText nameForFourth;
     private double SMALL_BEER = 0.3;
     private double REGULAR_BEER = 0.5;
     private Button btnUndo;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         nameForFirst = findViewById(R.id.name_first);
         nameForSecond = findViewById(R.id.name_second);
         nameForThird = findViewById(R.id.name_third);
-        nameForForth = findViewById(R.id.name_forth);
+        nameForFourth = findViewById(R.id.name_forth);
         ImageButton buttonOne = findViewById(R.id.small_first);
         ImageButton buttonTwo = findViewById(R.id.regular_first);
         ImageButton buttonThree = findViewById(R.id.small_second);
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("nameFirst", nameForFirst.getText().toString());
         outState.putString("nameSecond", nameForSecond.getText().toString());
         outState.putString("nameThird", nameForThird.getText().toString());
-        outState.putString("nameForth", nameForForth.getText().toString());
+        outState.putString("nameForth", nameForFourth.getText().toString());
     }
 
     /**
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         nameForFirst.setText(savedInstanceState.getString("nameFirst"));
         nameForSecond.setText(savedInstanceState.getString("nameSecond"));
         nameForThird.setText(savedInstanceState.getString("nameThird"));
-        nameForForth.setText(savedInstanceState.getString("nameForth"));
+        nameForFourth.setText(savedInstanceState.getString("nameForth"));
         displayAll();
     }
 
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String createMessage() {
         return nameForFirst.getText().toString() + ": " + volumeOne + " l\n" + nameForSecond.getText().toString()+ ": " + volumeTwo + " l\n"
-                + nameForThird.getText().toString()+ ": " + volumeThree + " l\n" + nameForForth.getText().toString()+ ": " + volumeFour + " l\n";
+                + nameForThird.getText().toString()+ ": " + volumeThree + " l\n" + nameForFourth.getText().toString()+ ": " + volumeFour + " l\n";
     }
 
     /**
