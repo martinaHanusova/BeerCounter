@@ -210,7 +210,7 @@
                         android:layout_height="@dimen/button_size"
                         android:layout_marginLeft="@dimen/small_horizontal_margin"
                         android:scaleType="centerInside"
-                        android:padding="@dimen/button_padding_small_icon"
+                        android:padding="@dimen/button_padding_normal_icon"
                         android:background="@drawable/mybutton"
                         android:src="@drawable/beer_icon"
                         android:contentDescription="@string/normal_beer_third"/>
